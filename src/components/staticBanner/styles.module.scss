@@ -1,0 +1,41 @@
+@import '/src/styles/variables.scss';
+
+.staticbannerSection {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .textBox {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        h1 {
+            font: $banner-title;
+            line-height: 64px;
+        }
+
+        p {
+            font: $banner-text;
+        }
+    }
+    
+    .imageBox {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}

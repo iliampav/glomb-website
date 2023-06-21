@@ -1,0 +1,12 @@
+@import '/src/styles/variables.scss';
+
+.buttonContainer {
+    width: 80%;
+    padding: 12px;
+    background-color: $branding-primary;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: $button-text;
+}
