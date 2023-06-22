@@ -31,7 +31,7 @@ export default function InsideTopics(props: insideTopicsInterface) {
                         width={560}
                     />
                 </div>
-                <div>
+                <div className={styles.textBoxContainer}>
                     <h2>{title}</h2>
                     <p>{text}</p>
                     {
