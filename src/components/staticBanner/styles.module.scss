@@ -1,13 +1,5 @@
 @import '/src/styles/variables.scss';
 
-.staticbannerSection {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .bannerContainer {
     width: 100%;
     display: flex;
@@ -24,18 +16,138 @@
         h1 {
             font: $banner-title;
             line-height: 64px;
+            margin-bottom: 16px;
         }
 
         p {
             font: $banner-text;
+            margin-bottom: 40px;
+        }
+
+        .checkedContainer {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0 24px;
+            margin-top: 32px;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 7px 20px 7px 0;
+                margin-bottom: 0;
+                font: $approved-text;
+            }
         }
     }
     
     .imageBox {
         max-width: 50%;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: flex-start;
+        position: relative;
+
+        img {
+            max-width: 80%;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .bannerContainer {
+        .textBox {
+            h1 {
+                font-size: 38px;
+                line-height: 46px;
+                margin-bottom: 14px;
+            }
+
+            p {
+                font-size: 14px;
+                margin-bottom: 25px;
+            }
+
+            .checkedContainer {
+                gap: 0 16px;
+                margin-top: 19px;
+    
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .imageBox {
+            img{
+                max-width: 100%;
+            }
+                
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .staticbannerSection {
+        align-items: flex-end;
+        padding-bottom: 32px;
+    }
+    .bannerContainer {
+
+        .textBox {
+            z-index: 1;
+            max-width: 100%;
+
+            h1 {
+                font-size: 32px;
+                color: white;
+                line-height: 38px;
+            }
+
+            p {
+                color: white;
+                font-size: 14px;
+                margin-bottom: 25px;
+                line-height: 22px;
+            }
+
+            .checkedContainer {
+    
+                p {
+                    color: white;
+                }
+            }
+        }
+
+        .imageBox {
+            width: 100vw;
+            position: absolute;
+            max-width: unset;
+            left: 0;
+            top: 0;
+            z-index: 0;
+
+            img{
+                max-width: unset;
+                object-fit: cover;
+                width: 100vw;
+                height: 100vh;
+                object-position: 50% 0;
+            }
+                
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
     }
 }

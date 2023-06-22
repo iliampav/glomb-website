@@ -1,0 +1,62 @@
+@import '/src/styles/variables.scss';
+
+.formsTopicsSection {
+    background-color: $light-gray-blue;
+    padding: 90px 0;
+    position: relative;
+    overflow: visible;
+}
+
+.backgroundPlay {
+    
+    background-color: #F2F6FA;
+    position: absolute;
+    top: -44px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: skewY(-2deg);
+}
+
+.formsTopics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    >div {
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        &.flexEnd {
+            justify-content: flex-end;
+        }
+
+        &.center {
+            justify-content: center;
+        }
+
+        div {
+            max-width: 55%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+}

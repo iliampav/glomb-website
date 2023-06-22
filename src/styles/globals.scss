@@ -66,6 +66,14 @@ a:hover {
   color: white;
 }
 
+section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
 [disabled] {
   opacity: 0.6;
   cursor: not-allowed;
@@ -73,11 +81,17 @@ a:hover {
 
 .container {
   max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.apearDesktop {
+    display: none;
 }
 
 @media (max-width: 1200px) {
   .container {
-    max-width: 768px;
+    max-width: 992px;
   }
 }
 
@@ -88,6 +102,15 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+
+  .apearMobile {
+      display: none;
+  }
+
+  .apearDesktop {
+      display: block;
+  }
+
   .container {
     max-width: 540px;
   }
