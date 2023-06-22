@@ -20,7 +20,7 @@ export default function StaticBanner(props: staticBannerInterface) {
     const {title, subTitle, buttonText, buttonLink, advantages, headerDesktop, headerMobile} = props
 
     return (
-        <section>
+        <section className={styles.staticbannerSection}>
             <div className={`container ${styles.bannerContainer}`}>
                 <div className={styles.textBox}>
                     <h1>{title}</h1>
@@ -32,12 +32,13 @@ export default function StaticBanner(props: staticBannerInterface) {
                     <div className={styles.checkedContainer}>
                         {
                             advantages.map((advantage: string) => {
-                                return <p><BlueCheck key={advantage} />{advantage}</p>
+                                return <p key={advantage}><BlueCheck />{advantage}</p>
                             })
                         }
                     </div>
                 </div>
                 <div className={styles.imageBox}>
+                    
                     <Image
                         className={'apearMobile'}
                         src={headerDesktop}
@@ -46,6 +47,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         alt="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
                         priority={true}
                     />
+
                     <Image
                         className={'apearDesktop'}
                         src={headerMobile}
@@ -54,6 +56,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         alt="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
                         priority={true}
                     />
+
                 </div>
             </div>
         </section>

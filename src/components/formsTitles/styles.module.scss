@@ -18,6 +18,20 @@
     transform: skewY(-2deg);
 }
 
+.singleFormBox {
+    position: relative;
+
+    h3 {
+        font: $internal-title;
+        line-height: 32px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font: $main-text;
+    }
+}
+
 .formsTopics {
     display: flex;
     justify-content: center;
@@ -27,9 +41,22 @@
     >div {
         width: 33%;
         display: flex;
-        justify-content: flex-start;
         align-items: center;
-        gap: 20px;
+        gap: 26px;
+
+        &.flexStart {
+            justify-content: flex-start;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -40%;
+                right: 6%;
+                height: 200%;
+                border-right: 1px solid $light-gray;
+                z-index: 1;
+            }
+        }
 
         &.flexEnd {
             justify-content: flex-end;
@@ -37,6 +64,16 @@
 
         &.center {
             justify-content: center;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -40%;
+                right: -4%;
+                height: 200%;
+                border-right: 1px solid $light-gray;
+                z-index: 1;
+            }
         }
 
         div {
@@ -50,13 +87,41 @@
 }
 
 @media (max-width: 992px) {
-    
+    .formsTopics {
+        flex-wrap: wrap;
+        gap: 30px;
+
+        >div {
+            width: 45%;
+            justify-content: center !important;
+
+            &:after {
+                content: unset !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    
+    .formsTopicsSection, .backgroundPlay {
+        background-color: transparent;
+    }
+    .formsTopics {
+        flex-wrap: wrap;
+        gap: 60px;
+
+        >div {
+            width: 100%;
+        }
+    }
 }
 
 @media (max-width: 576px) {
-    
+    .formsTopics {
+        >div {
+            div {
+                max-width: 60%;
+            }
+        }
+    }
 }
