@@ -20,7 +20,7 @@
         }
 
         p {
-            font: $main-text;
+            font: $main-text-16;
             margin-bottom: 40px;
         }
 
@@ -38,7 +38,7 @@
                 align-items: center;
                 padding: 7px 20px 7px 0;
                 margin-bottom: 0;
-                font: $approved-text;
+                font: $main-text-16-semibold;
             }
         }
     }

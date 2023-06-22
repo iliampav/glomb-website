@@ -1,0 +1,76 @@
+@import '/src/styles/variables.scss';
+
+.insideTopicsMainBox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 102px 0;
+
+    >div {
+        width: 45%;
+        gap: 20px;
+
+        h2 {
+            font: $internal-title-32;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font: $main-text-14;
+            margin-bottom: 24px;
+        }
+
+        li {
+            margin-left: 17px;
+        }
+
+        a {
+            width: 100%;
+        }
+
+        .grayBox {
+            background-color: $light-gray-blue;
+            width: 100%;
+            padding: 19px 24px;
+            border-radius: 4px;
+            margin-bottom: 24px;
+
+            p {
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .imageContainer {
+        position: relative;
+        height: 100%;
+
+        img {
+            object-fit: contain;
+            max-width: 100%;
+        }
+    }
+}
+
+.invertImagePosition {
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 768px) {
+    
+}
+
+@media (max-width: 576px) {
+    
+}

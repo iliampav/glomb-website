@@ -6,18 +6,20 @@ import BlueButton from '../atons/blueButton';
 import { ReactNode } from 'react';
 
 interface staticBannerInterface {
-    title: string; 
-    subTitle: ReactNode; 
+    title: ReactNode | string; 
+    subTitle: ReactNode | string; 
     buttonText: string; 
     buttonLink: string; 
     advantages: string[]; 
     headerDesktop: string;
     headerMobile: string;
+    headerDesktopDescription: string;
+    headerMobileDescription: string;
 }
 
 export default function StaticBanner(props: staticBannerInterface) {
 
-    const {title, subTitle, buttonText, buttonLink, advantages, headerDesktop, headerMobile} = props
+    const {title, subTitle, buttonText, buttonLink, advantages, headerDesktop, headerDesktopDescription, headerMobile, headerMobileDescription} = props
 
     return (
         <section className={styles.staticbannerSection}>
@@ -44,7 +46,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         src={headerDesktop}
                         width={596}
                         height={652}
-                        alt="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
+                        alt={headerDesktopDescription}
                         priority={true}
                     />
 
@@ -53,7 +55,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         src={headerMobile}
                         width={375}
                         height={720}
-                        alt="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
+                        alt={headerMobileDescription}
                         priority={true}
                     />
 
