@@ -33,7 +33,7 @@ export default function InsideTopics(props: insideTopicsInterface) {
                 </div>
                 <div className={styles.textBoxContainer}>
                     <h2>{title}</h2>
-                    <p>{text}</p>
+                    <div>{text}</div>
                     {
                         listText &&
                             <ul>
