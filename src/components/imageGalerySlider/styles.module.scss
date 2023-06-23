@@ -136,6 +136,10 @@
             width: 500px !important;
         }
     }
+    .sliderButtons {
+        top: -10%;
+        gap: 20px;
+    }
     
 }
 
@@ -144,9 +148,11 @@
         h2 {
             font: $internal-title-20-bold;
         }
+
         h3 {
             font: $internal-title-14;
         }
+
         :global(.swiper-wrapper) {
             width: 100%;
         }

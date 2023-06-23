@@ -75,7 +75,7 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                     {
                         carrouselImages.map((image: imageInterface) => {
                             return (
-                            <SwiperSlide className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
+                            <SwiperSlide key={image.imageUrl} className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
                                 <Image 
                                     src={image.imageUrl}
                                     width={478}
