@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 import Image from 'next/image'
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ReactNode } from 'react';
@@ -24,6 +24,33 @@ interface imageInterface {
 export default function ImageGalerySlider(props: imageGalerySliderInterface) {
 
     const {title, subTitle, carrouselImages, initialSlideNumber} = props
+
+    const [screenSize, getDimension] = useState({
+        dynamicWidth: 0,
+        dynamicHeight: 0
+      });
+
+    const setDimension = () => {
+        getDimension({
+            dynamicWidth: window.innerWidth,
+            dynamicHeight: window.innerHeight
+        })
+    }
+
+    useEffect(() => {
+        getDimension({
+            dynamicWidth: window.innerWidth,
+            dynamicHeight: window.innerHeight
+        })
+    }, [])
+
+    useEffect(() => {
+    window.addEventListener('resize', setDimension);
+    
+    return(() => {
+        window.removeEventListener('resize', setDimension);
+    })
+    }, [screenSize])
     
     return (
         <section className={styles.imageGalerySliderSection}>
@@ -37,7 +64,7 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                     }
                 </div>
                 <Swiper
-                    slidesPerView={5} 
+                    slidesPerView={screenSize.dynamicWidth >= 768 ? 5 : 1} 
                     className="mySwiper"
                     centeredSlides={true}
                     spaceBetween={30}
