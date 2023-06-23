@@ -2,24 +2,34 @@ import styles from './styles.module.scss';
 import Image from 'next/image'
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from "swiper";
 
 import { ReactNode } from 'react';
+import SwiperButtons from './swiperButtons';
 
 interface imageGalerySliderInterface {
     title: ReactNode | string;
-    subTitle: ReactNode[] | string[] ;
+    subTitle: string[] ;
+    carrouselImages: {
+        imageUrl: string;
+        imageDescription: string;
+    }[];
+    initialSlideNumber: number;
 }
+
+interface imageInterface {
+        imageUrl: string;
+        imageDescription: string;
+    }[]
 
 export default function ImageGalerySlider(props: imageGalerySliderInterface) {
 
-    const {title, subTitle} = props
-
+    const {title, subTitle, carrouselImages, initialSlideNumber} = props
+    
     return (
         <section className={styles.imageGalerySliderSection}>
             <div className={`container ${styles.sliderContainer}`}>
                 <h2>{title}</h2>
-                <div>
+                <div className={styles.subText}>
                     {
                         subTitle.map((eachTitle: ReactNode | string) => {
                             return <h3>{eachTitle}</h3>
@@ -27,70 +37,29 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                     }
                 </div>
                 <Swiper
-                    watchSlidesProgress={true} 
-                    slidesPerView={3} 
+                    slidesPerView={5} 
                     className="mySwiper"
-                    navigation={true}
                     centeredSlides={true}
                     spaceBetween={30}
-                    modules={[Navigation]}
+                    initialSlide={initialSlideNumber}
                 >
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Image 
-                            src={'/assets/images/aposentadoria/escritorio/glomOffice.jpg'}
-                            width={500}
-                            height={310}
-                            alt=''
-                        />
-                    </SwiperSlide>
+                    <SwiperButtons />
+                    
+                    {
+                        carrouselImages.map((image: imageInterface) => {
+                            return (
+                            <SwiperSlide className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
+                                <Image 
+                                    src={image.imageUrl}
+                                    width={478}
+                                    height={503}
+                                    alt={image.imageDescription}
+                                />
+                            </SwiperSlide>
+                            )
+                        })
+                    }
+                    
                 </Swiper>
             </div>
         </section>

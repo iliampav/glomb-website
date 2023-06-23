@@ -86,7 +86,7 @@ return (
     {/* imagem deve ser com width: 560px por heigh: 315px */}
     <InsideTopics 
       title={'Quem tem direito?'} 
-      text={'A Revisão da Vida Toda se aplica aos Aposentados e Pensionistas que:'} 
+      text={<p>A Revisão da Vida Toda se aplica aos Aposentados e Pensionistas que:</p>} 
       listText={[
         'Contribuíram com valores altos antes de 07/1994 e, após essa data, tiveram contribuições mais baixas;',
         'Tiveram muitas contribuições antes de 07/1994 e, após essa data, tiveram poucas contribuições.'
@@ -101,6 +101,53 @@ return (
     <ImageGalerySlider 
       title={'Transformar vidas por meio da justiça é nosso propósito'} 
       subTitle={['46+ anos de atuação', '25.000+ clientes atendidos']} 
+      initialSlideNumber={5}
+      carrouselImages={[
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice2.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice3.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice4.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice5.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice6.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice7.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice8.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice9.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice10.jpg',
+          imageDescription: ''
+        },
+        {
+          imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice11.jpg',
+          imageDescription: ''
+        }
+      ]}
     />
   </>
   )

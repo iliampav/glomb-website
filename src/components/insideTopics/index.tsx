@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 
 interface insideTopicsInterface {
     title: ReactNode | string, 
-    text: ReactNode | string, 
+    text: ReactNode, 
     buttonText: string, 
     buttonLink: string, 
     image: string, 
