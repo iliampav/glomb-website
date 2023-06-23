@@ -20,7 +20,7 @@
         }
 
         p {
-            font: $banner-text;
+            font: $main-text-16;
             margin-bottom: 40px;
         }
 
@@ -38,7 +38,7 @@
                 align-items: center;
                 padding: 7px 20px 7px 0;
                 margin-bottom: 0;
-                font: $approved-text;
+                font: $main-text-16-semibold;
             }
         }
     }
@@ -55,10 +55,6 @@
             object-fit: contain;
         }
     }
-}
-
-@media (max-width: 1200px) {
-    
 }
 
 @media (max-width: 992px) {
@@ -98,7 +94,9 @@
     .staticbannerSection {
         align-items: flex-end;
         padding-bottom: 32px;
+        height: 100vh;
     }
+    
     .bannerContainer {
 
         .textBox {

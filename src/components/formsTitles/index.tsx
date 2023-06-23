@@ -20,7 +20,7 @@ export default function FormsTopics(props: formsTitleInterface) {
     return (
         <section className={styles.formsTopicsSection}>
             <div className={`container ${styles.formsTopics}`}>
-                <div className={styles.singleFormBox}>
+                <div className={`${styles.singleFormBox} ${styles.flexStart}`}>
                     <OrangeForm />
                     <div>
                         <h3>{firstTitle}</h3>
