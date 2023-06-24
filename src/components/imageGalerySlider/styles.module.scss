@@ -155,10 +155,12 @@
 
         :global(.swiper-wrapper) {
             width: 100%;
+            height: auto;
         }
 
         :global(.swiper-slide)  { 
             width: 100% !important;
+            height: auto;
         }
     }
    

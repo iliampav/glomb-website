@@ -194,7 +194,7 @@ return (
           clientName:'Gabriela Fialho'
         },
         {
-          title: 'Gratidão pela justiça alcançada',
+          title: 'Proficionais focados e respeiosos',
           text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência',
           starNumber:5,
           clientName:'Matilde Rodrigues'

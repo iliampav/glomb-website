@@ -59,7 +59,7 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                 <div className={styles.subText}>
                     {
                         subTitle.map((eachTitle: ReactNode | string) => {
-                            return <h3>{eachTitle}</h3>
+                            return <h3 key={Math.random()}>{eachTitle}</h3>
                         })
                     }
                 </div>
