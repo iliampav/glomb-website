@@ -4,6 +4,7 @@ import StaticBanner from '../components/staticBanner';
 import FormsTopics from '../components/formsTitles';
 import InsideTopics from '../components/insideTopics';
 import ImageGalerySlider from '../components/imageGalerySlider';
+import PeopleComents from '../components/peopleComents';
 
 const Aposentadoria: NextPage = () => {
 return (
@@ -147,6 +148,57 @@ return (
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice11.jpg',
           imageDescription: ''
         }
+      ]}
+    />
+
+    <PeopleComents 
+      sectionTitle={<>Atendemos <strong>100% on-line</strong> em todo o Brasil</>}
+      clientCardsTitle='O que nossos clientes dizem'
+      imageUrl={'/assets/images/aposentadoria/grupoPessoas.png'} 
+      imageDescription={'Aposentados e pensionistas felizes'}
+      clientsComentCard={[
+        {
+          title: 'Gratidão pela justiça alcançada',
+          text:'Agradeço por transformarem minha vida através da justiça, proporcionando tranquilidade e segurança na defesa dos meus direitos de pensão. O atendimento personalizado e a clareza nas informações foram excepcionais. Sua competência e comprometimento concretizaram meus direitos. Muito obrigada por serem verdadeiros agentes de justiça!',
+          starNumber:5,
+          clientName:'Jussara Miranda'
+        },
+        {
+          title: 'Muito bem atendida',
+          text:'Muito bem atendida pela excelente advogada, Dra. Bruna Stephano, "expert" em direito previdenciário. Super Recomendo',
+          starNumber:5,
+          clientName:'Doroti Valeixo'
+        },
+        {
+          title: 'Confiança e profissionalismo',
+          text:'Sou cliente deste conceituado escritório de advocacia há mais de 20 anos, e sempre fui atendido com muito profissionalismo... Recomendo!',
+          starNumber:5,
+          clientName:'Tadeu Timowicz'
+        },
+        {
+          title: 'Há mais de 25 anos juntos',
+          text:'Atendimento impecável, tratei com os advogados mais experientes da área. Sou cliente do escritório a mais de 25 anos...',
+          starNumber:5,
+          clientName:'Nilva Carvalho'
+        },
+        {
+          title: 'Rápido e excelente trabalho',
+          text:'Gostaria de agradecer o excelente trabalho realizado pela Dra Bruna Stefano... Oprocesso foi concluído com sucesso em um tempo muito bom...',
+          starNumber:5,
+          clientName:'Daiane Lima'
+        },
+        {
+          title: 'Atendimento excelente',
+          text:'Ótimo atendimento com atendimento excelente. Super indico para quem está procurando um serviço de qualidade.',
+          starNumber:5,
+          clientName:'Gabriela Fialho'
+        },
+        {
+          title: 'Gratidão pela justiça alcançada',
+          text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência',
+          starNumber:5,
+          clientName:'Matilde Rodrigues'
+        },
       ]}
     />
   </>
