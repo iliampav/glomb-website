@@ -113,6 +113,13 @@
 }
 
 @media (max-width: 576px) {
+
+    .formsTopicsSection {
+        background-color: $light-gray-blue;
+        padding: 20px 0;
+        position: relative;
+        overflow: visible;
+    }
     .formsTopics {
         >div {
             div {

@@ -1,0 +1,219 @@
+@import '/src/styles/variables.scss';
+
+.peopleComentsSection {
+    padding: 56px 0 150px;
+}
+
+.sliderButtons {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+
+    button{
+        background-color: transparent;
+    }
+}
+
+.PeopleComentsContainer {
+    >h2 {
+        text-align: center;
+        padding-bottom: 140px;
+        font: $internal-title-32;
+    }
+
+    >div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+        >div {
+            width: 47%;
+        }
+
+        .imageContainer {
+            position: relative;
+            height: 100%;
+
+            img {
+                object-fit: contain;
+                max-width: 100%;
+                margin-left: -11%;
+            }
+        }
+
+        .sliderComentsContainer {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            position: relative;
+
+            h2 {
+                font: $internal-title-32-bold;
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                font: $internal-title-24;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font: $main-text-16;
+                margin-top: 10px;
+            }
+
+            h4 {
+                margin-top: 24px;
+                font: $internal-title-18-semibold;
+            }
+
+            svg {
+                margin-right: 5px;
+            }
+
+            .comentBox {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+
+                p {
+                    text-align: start;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .PeopleComentsContainer {
+    
+        >div {
+            
+        
+            >div {
+                width: 100%;
+            }
+
+            .imageContainer {
+                img {
+                    margin: 0;
+                }
+            }
+    
+            .sliderComentsContainer {
+    
+                h2 {
+                    font-size: 30px;
+                    margin-bottom: 5px;
+                }
+
+                h3 {
+                    font-size: 22px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .PeopleComentsContainer {
+        >h2 {
+            padding-bottom: 80px;
+        }
+    
+        >div {
+    
+            .sliderComentsContainer {
+    
+                h2 {
+                    font-size: 22px;
+                    line-height: 28px;
+                    margin: 0;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .PeopleComentsContainer {
+
+        >h2 {
+            font-size: 20px;
+            line-height: 29px;
+        }
+    
+        >div {
+            flex-direction: column;
+    
+            .sliderComentsContainer {
+    
+                h2 {
+                    font-size: 20px;
+                    margin-bottom: 5px;
+                }
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+
+                h4 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .PeopleComentsContainer {
+
+        >h2 {
+            padding-bottom: 30px;
+        }
+
+            >div {
+
+            .imageContainer {
+                height: 280px;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
