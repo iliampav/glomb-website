@@ -20,11 +20,11 @@ html {
 
 ::-webkit-scrollbar {
   width: 4px;
-  background-color: black;
+  background-color: $branding-secondary;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: yellow;
+  background: $branding-primary;
   border-radius: 10px;
 }
 
