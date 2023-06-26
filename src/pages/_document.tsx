@@ -6,9 +6,7 @@ export default class MyDocument extends Document {
         return ( 
             <Html lang="pt">
                 <Head>
-                    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" />
-                    <link rel="icon" href="dice.ico" type="image/x-icon"/>
+                    <link rel="icon" type="image/x-icon"/>
                 </Head>
                 <body>
                     <Main />
