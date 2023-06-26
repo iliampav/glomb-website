@@ -14,9 +14,9 @@ return (
       <meta name="author" content="Iliam Ferreira Pavkovic"></meta>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title></title>
-      <meta name="keywords" content=""></meta>
-      <meta name="description" content=""></meta>
+      <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
+      <meta name="keywords" content="aposentadoria, valor, advogado, aposentado"></meta>
+      <meta name="description" content="A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos."></meta>
     </Head>
 
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
