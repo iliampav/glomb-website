@@ -4,7 +4,7 @@ import "swiper/css";
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
   if (metric.label === 'web-vital') {
-    console.log(metric) // The metric object ({ id, name, startTime, value, label }) is logged to the console
+    
   }
 }
 
