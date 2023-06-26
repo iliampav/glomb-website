@@ -48,6 +48,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         height={652}
                         alt={headerDesktopDescription}
                         priority={true}
+                        loading="lazy"
                     />
 
                     <Image
@@ -57,6 +58,7 @@ export default function StaticBanner(props: staticBannerInterface) {
                         height={720}
                         alt={headerMobileDescription}
                         priority={true}
+                        loading="lazy"
                     />
 
                 </div>
