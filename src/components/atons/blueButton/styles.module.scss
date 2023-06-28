@@ -1,28 +1,28 @@
 @import '/src/styles/variables.scss';
 
 .buttonContainer {
-    width: 80%;
-    padding: 12px;
+    width: 95%;
+    padding: 16px;
     background-color: $branding-primary;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font: $main-text-18;
+    font: $main-text-20;
 }
 
 @media (max-width: 1200px) {
     .buttonContainer {
         width: 90%;
         font-size: 16px;
-        padding: 8px;
+        padding: 14px;
     }
 }
 
 @media (max-width: 768px) {
     .buttonContainer {
         width: 100%;
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 

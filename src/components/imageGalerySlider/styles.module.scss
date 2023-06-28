@@ -29,6 +29,7 @@
         font: $internal-title-40-bold;
         max-width: 70%;
         text-align: center;
+        margin-bottom: 24px;
     }
 
     .subText {
@@ -55,6 +56,7 @@
     :global(.swiper-slide)  { 
         width: calc(15%) !important;
         height: 503px;
+        background-color: unset;
         -webkit-transition: width 1s ease-in-out;
         -moz-transition: width 1s ease-in-out;
         -o-transition: width 1s ease-in-out;
@@ -117,27 +119,47 @@
 
 @media (max-width: 768px) {
     .sliderContainer {
+        width: 100vw;
+        max-width: unset;
+        padding: 0;
+
         .subText {
             flex-direction: column;
             gap: 0px;
         }
 
         h2 {
-            max-width: 100%;
+            max-width: 540px;
             font-size: 30px;
             line-height: 35px;
         }
 
         h3 {
             line-height: 19px;
+            max-width: 540px;
         }
 
+        :global(.swiper-wrapper) {
+            width: 100%;
+        }
+    
         :global(.swiper-slide)  { 
-            width: 500px !important;
+            width: 100% !important;
+        }
+    
+        :global(.swiper-slide-active)  { 
+            width: 100% !important;
+        }
+
+        .nextOrPrevSlider {
+            img {
+                border-radius: 0px;
+            }
         }
     }
     .sliderButtons {
         top: -10%;
+        right: 30px;
         gap: 20px;
     }
     
@@ -146,7 +168,7 @@
 @media (max-width: 576px) {
     .sliderContainer {
         h2 {
-            font: $internal-title-20-bold;
+            font: $internal-title-26;
         }
 
         h3 {

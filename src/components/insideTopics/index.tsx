@@ -1,5 +1,4 @@
 import styles from './styles.module.scss';
-import Image from 'next/image'
 
 import BlueButton from '../atons/blueButton';
 import { ReactNode } from 'react';
@@ -24,11 +23,9 @@ export default function InsideTopics(props: insideTopicsInterface) {
         <section>
             <div className={`container ${styles.insideTopicsMainBox} ${invertImagePosition ? styles.invertImagePosition : '' }`}>
                 <div className={styles.imageContainer}>
-                    <Image 
+                    <img 
                         src={image} 
                         alt={imageDescription} 
-                        height={315}
-                        width={560}
                     />
                 </div>
                 <div className={styles.textBoxContainer}>

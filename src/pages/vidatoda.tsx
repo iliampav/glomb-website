@@ -5,6 +5,7 @@ import FormsTopics from '../components/formsTitles';
 import InsideTopics from '../components/insideTopics';
 import ImageGalerySlider from '../components/imageGalerySlider';
 import PeopleComents from '../components/peopleComents';
+import { GetStaticProps } from 'next'
 
 const Aposentadoria: NextPage = () => {
 return (
@@ -57,7 +58,7 @@ return (
         </>} 
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      image={'/assets/images/aposentadoria/imageAposentadoMelhor.png'} 
+      image={'/assets/images/aposentadoria/imageAposentadoMelhor.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
 
@@ -79,7 +80,7 @@ return (
       } 
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      image={'/assets/images/aposentadoria/vantagemMelhorRevisao.png'} 
+      image={'/assets/images/aposentadoria/vantagemMelhorRevisao.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
       invertImagePosition={true}
     />
@@ -95,7 +96,7 @@ return (
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
       grayBoxText={<>A Revisão da Vida Toda se aplica apenas aos aposentados ou pensionistas que estejam recebendo o benefício há <br /><strong>menos de 10 anos.</strong></>}
-      image={'/assets/images/aposentadoria/quemTemDireito.png'} 
+      image={'/assets/images/aposentadoria/quemTemDireito.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
     
