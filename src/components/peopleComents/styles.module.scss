@@ -1,7 +1,7 @@
 @import '/src/styles/variables.scss';
 
 .peopleComentsSection {
-    padding: 56px 0 150px;
+    padding: 96px 0 150px;
 }
 
 .sliderButtons {
@@ -24,7 +24,7 @@
 .PeopleComentsContainer {
     >h2 {
         text-align: center;
-        padding-bottom: 140px;
+        padding-bottom: 96px;
         font: $internal-title-32;
     }
 
@@ -58,7 +58,7 @@
             position: relative;
 
             h2 {
-                font: $internal-title-32-bold;
+                font: $internal-title-36-bold;
                 margin-bottom: 10px;
             }
 
@@ -68,13 +68,13 @@
             }
 
             p {
-                font: $main-text-16;
+                font: $main-text-18;
                 margin-top: 10px;
             }
 
             h4 {
                 margin-top: 24px;
-                font: $internal-title-18-semibold;
+                font: $internal-title-24;
             }
 
             svg {
@@ -99,17 +99,6 @@
     .PeopleComentsContainer {
     
         >div {
-            
-        
-            >div {
-                width: 100%;
-            }
-
-            .imageContainer {
-                img {
-                    margin: 0;
-                }
-            }
     
             .sliderComentsContainer {
     
@@ -137,9 +126,21 @@
     .PeopleComentsContainer {
         >h2 {
             padding-bottom: 80px;
+
         }
     
         >div {
+            flex-direction: column;
+        
+            >div {
+                width: 100%;
+            }
+
+            .imageContainer {
+                img {
+                    margin: 0;
+                }
+            }
     
             .sliderComentsContainer {
     
@@ -164,15 +165,19 @@
 }
 
 @media (max-width: 768px) {
+    .peopleComentsSection {
+        padding: 48px 0 150px;
+    }
+
     .PeopleComentsContainer {
 
         >h2 {
             font-size: 20px;
             line-height: 29px;
+            padding-bottom: 48px;
         }
     
         >div {
-            flex-direction: column;
     
             .sliderComentsContainer {
     
@@ -194,6 +199,12 @@
                     font-size: 18px;
                 }
             }
+
+            .imageContainer {
+                justify-content: center;
+                display: flex;
+                margin-bottom: 32px;
+            }
         }
     }
 }
@@ -212,6 +223,7 @@
 
                 img {
                     height: 100%;
+                    width: auto;
                 }
             }
         }

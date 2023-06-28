@@ -1,5 +1,4 @@
 import styles from './styles.module.scss';
-import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -45,11 +44,11 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
     }, [])
 
     useEffect(() => {
-    window.addEventListener('resize', setDimension);
+        window.addEventListener('resize', setDimension);
     
-    return(() => {
-        window.removeEventListener('resize', setDimension);
-    })
+        return(() => {
+            window.removeEventListener('resize', setDimension);
+        })
     }, [screenSize])
     
     return (
@@ -59,7 +58,7 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                 <div className={styles.subText}>
                     {
                         subTitle.map((eachTitle: ReactNode | string) => {
-                            return <h3>{eachTitle}</h3>
+                            return <h3 key={Math.random()}>{eachTitle}</h3>
                         })
                     }
                 </div>
@@ -67,7 +66,8 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                     slidesPerView={screenSize.dynamicWidth >= 768 ? 5 : 1} 
                     className="mySwiper"
                     centeredSlides={true}
-                    spaceBetween={30}
+                    loop={screenSize.dynamicWidth <= 768}
+                    spaceBetween={screenSize.dynamicWidth >= 768 ? 30 : 0}
                     initialSlide={initialSlideNumber}
                 >
                     <SwiperButtons />
@@ -76,10 +76,8 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                         carrouselImages.map((image: imageInterface) => {
                             return (
                             <SwiperSlide key={image.imageUrl} className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
-                                <Image 
+                                <img 
                                     src={image.imageUrl}
-                                    width={478}
-                                    height={503}
                                     alt={image.imageDescription}
                                 />
                             </SwiperSlide>

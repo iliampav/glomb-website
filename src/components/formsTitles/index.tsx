@@ -23,21 +23,21 @@ export default function FormsTopics(props: formsTitleInterface) {
                 <div className={`${styles.singleFormBox} ${styles.flexStart}`}>
                     <OrangeForm />
                     <div>
-                        <h3>{firstTitle}</h3>
+                        <h1>{firstTitle}</h1>
                         <p>{firstSubTitle}</p>
                     </div>
                 </div>
                 <div className={`${styles.singleFormBox} ${styles.center}`}>
                     <GreenForm />
                     <div>
-                        <h3>{secondTitle}</h3>
+                        <h1>{secondTitle}</h1>
                         <p>{secondSubTitle}</p>
                     </div>
                 </div>
                 <div className={`${styles.singleFormBox} ${styles.flexEnd}`}>
                     <BlueForm />
                     <div>
-                        <h3>{thirdTitle}</h3>
+                        <h1>{thirdTitle}</h1>
                         <p>{thirdSubTitle}</p>
                     </div>
                 </div>

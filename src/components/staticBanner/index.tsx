@@ -41,22 +41,16 @@ export default function StaticBanner(props: staticBannerInterface) {
                 </div>
                 <div className={styles.imageBox}>
                     
-                    <Image
+                    <img
                         className={'apearMobile'}
                         src={headerDesktop}
-                        width={596}
-                        height={652}
                         alt={headerDesktopDescription}
-                        priority={true}
                     />
 
-                    <Image
+                    <img
                         className={'apearDesktop'}
                         src={headerMobile}
-                        width={375}
-                        height={720}
                         alt={headerMobileDescription}
-                        priority={true}
                     />
 
                 </div>

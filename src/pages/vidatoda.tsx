@@ -5,6 +5,7 @@ import FormsTopics from '../components/formsTitles';
 import InsideTopics from '../components/insideTopics';
 import ImageGalerySlider from '../components/imageGalerySlider';
 import PeopleComents from '../components/peopleComents';
+import { GetStaticProps } from 'next'
 
 const Aposentadoria: NextPage = () => {
 return (
@@ -14,9 +15,9 @@ return (
       <meta name="author" content="Iliam Ferreira Pavkovic"></meta>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title></title>
-      <meta name="keywords" content=""></meta>
-      <meta name="description" content=""></meta>
+      <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
+      <meta name="keywords" content="aposentadoria, valor, advogado, aposentado"></meta>
+      <meta name="description" content="A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos."></meta>
     </Head>
 
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
@@ -28,7 +29,7 @@ return (
       advantages={["Sem compromisso", "100% on-line", "Atendimento especializado"]}
       headerDesktop='/assets/images/aposentadoria/headerPerson.png'
       headerDesktopDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
-      headerMobile='/assets/images/aposentadoria/headerPersonMobile.png'
+      headerMobile='/assets/images/aposentadoria/headerPersonMobile.jpg'
       headerMobileDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
     />
 
@@ -57,7 +58,7 @@ return (
         </>} 
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      image={'/assets/images/aposentadoria/imageAposentadoMelhor.png'} 
+      image={'/assets/images/aposentadoria/imageAposentadoMelhor.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
 
@@ -79,7 +80,7 @@ return (
       } 
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      image={'/assets/images/aposentadoria/vantagemMelhorRevisao.png'} 
+      image={'/assets/images/aposentadoria/vantagemMelhorRevisao.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
       invertImagePosition={true}
     />
@@ -95,7 +96,7 @@ return (
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
       grayBoxText={<>A Revisão da Vida Toda se aplica apenas aos aposentados ou pensionistas que estejam recebendo o benefício há <br /><strong>menos de 10 anos.</strong></>}
-      image={'/assets/images/aposentadoria/quemTemDireito.png'} 
+      image={'/assets/images/aposentadoria/quemTemDireito.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
     
@@ -194,7 +195,7 @@ return (
           clientName:'Gabriela Fialho'
         },
         {
-          title: 'Gratidão pela justiça alcançada',
+          title: 'Proficionais focados e respeiosos',
           text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência',
           starNumber:5,
           clientName:'Matilde Rodrigues'

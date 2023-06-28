@@ -1,6 +1,5 @@
 import styles from './styles.module.scss';
 import React, { ReactNode } from 'react';
-import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Star from '@/public/assets/svgs/star.svg';
 
@@ -39,10 +38,8 @@ export default function PeopleComents(props: imageGalerySliderInterface) {
                 <h2>{sectionTitle}</h2>
                 <div>
                     <div className={styles.imageContainer}>
-                        <Image 
+                        <img 
                             src={imageUrl}
-                            width={597}
-                            height={419}
                             alt={imageDescription}
                         />
                     </div>

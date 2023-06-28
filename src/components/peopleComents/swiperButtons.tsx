@@ -12,16 +12,16 @@ export default function SwiperButtons() {
     
     return (
             <div className={styles.sliderButtons}>
-                <button className='apearMobile' onClick={() => swiper.slidePrev()}>
+                <button aria-label="see previoues image" className='apearMobile' onClick={() => swiper.slidePrev()}>
                     <SliderPrev />
                 </button>
-                <button className='apearDesktop' onClick={() => swiper.slidePrev()}>
+                <button aria-label="see previoues image" className='apearDesktop' onClick={() => swiper.slidePrev()}>
                     <SliderPrevMobile />
                 </button>
-                <button className='apearMobile' onClick={() => swiper.slideNext()}>
+                <button aria-label="see next image" className='apearMobile' onClick={() => swiper.slideNext()}>
                     <SliderNext />
                 </button>
-                <button className='apearDesktop' onClick={() => swiper.slideNext()}>
+                <button aria-label="see next image" className='apearDesktop' onClick={() => swiper.slideNext()}>
                     <SliderNextMobile />
                 </button>
             </div> 

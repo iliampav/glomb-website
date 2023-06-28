@@ -21,14 +21,14 @@
 .singleFormBox {
     position: relative;
 
-    h3 {
+    h1 {
         font: $internal-title-24;
         line-height: 32px;
         margin-bottom: 8px;
     }
 
     p {
-        font: $main-text-16;
+        font: $main-text-18;
     }
 }
 
@@ -115,10 +115,20 @@
 @media (max-width: 576px) {
 
     .formsTopicsSection {
-        background-color: $light-gray-blue;
-        padding: 20px 0;
+        padding: 40px 0;
         position: relative;
         overflow: visible;
+        margin-bottom: 40px;
+
+        &::after {
+            content: "";
+            background: #F2F6FA;
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            height: 2px;
+            width: 80%;
+        }
     }
     .formsTopics {
         >div {
