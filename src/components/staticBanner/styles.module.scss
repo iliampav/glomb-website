@@ -101,6 +101,14 @@
 }
 
 @media (max-width: 768px) {
+
+    .bannerContainer {
+        padding: 70px 10px 10px;
+
+        .textBox {
+            max-width: 50%;
+        }
+    }
     .staticbannerSection {
         align-items: flex-end;
         padding: 0px;

@@ -23,7 +23,7 @@ return (
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
     <StaticBanner 
       title="O VALOR DA SUA APOSENTADORIA PODE DOBRAR"
-      subTitle={<>A Revisão da Vida Toda permite <strong>aumentar o valor</strong> de milhares de aposentadorias e pensões e, ainda cobrar uma <strong>indenização</strong> pelas diferenças dos últimos 5 anos.</>}
+      subTitle={<>Com a Revisão da Vida Toda você pode aumentar o valor de sua aposentadoria ou pensão e receber uma indenização pelas diferenças dos últimos 5 anos. Clique no botão abaixo para descobrir se você tem direito.</>}
       buttonText="Quero ser atendido"
       buttonLink="/"
       advantages={["Sem compromisso", "100% on-line", "Atendimento especializado"]}
@@ -35,11 +35,11 @@ return (
 
     <FormsTopics 
       firstTitle="Poupe seu tempo" 
-      firstSubTitle="Avaliamos seu caso sem compromisso e indicamos a melhor forma de conquistar seus direitos."
+      firstSubTitle="Avaliamos seu caso sem compromisso e indicamos como conquistar seus direitos."
       secondTitle="Resolva sua necessidade"
       secondSubTitle="Nossos advogados especialistas entrarão em contato para atendê-lo e indicar a melhor solução."
       thirdTitle="Conquiste seus direitos"
-      thirdSubTitle="Conte com nossa experiência de 45 anos e descubra se você tem direito a revisão da vida toda."
+      thirdSubTitle="Conte com nossa experiência de 45 anos e descubra se você tem direito à revisão da vida toda."
     />
 
     {/* imagem deve ser com width: 560px por heigh: 315px */}
@@ -48,12 +48,13 @@ return (
       text={
         <>
           <p>
-            Em 01 de dezembro de 2022 o STF aprovou a Revisão da Vida Toda.<br/>
+            Milhares de aposentados que contribuíram ao INSS antes de 1994, podem estar recebendo uma aposentadoria menor do que deveriam.<br/>
           </p>
           <p>
-            A partir dessa decisão,Aposentados e Pensionistas que contribuíram para o INSS antes de 1994 podem revisar seus benefícios na 
-            justiça e aumentar o valor mensal em até 5x. Ainda, é possível pedir o pagamento dos valores
-            atrasados e corrigidos dos últimos 5 anos.
+            Isso acontece porque, para calcular o valor das aposentadorias, o INSS considerava apenas as contribuições feitas após julho de 1994 e excluía todas as anteriores.<br /> 
+          </p>
+          <p>
+            Por esse motivo, o valor dos benefícios de quem se aposentou até novembro de 2019 pode estar mais baixo do que deveria ser.
           </p>
         </>} 
       buttonText={'Quero ser atendido'} 
@@ -68,13 +69,13 @@ return (
       text={
         <>  
           <p>
-            Até dezembro de 2022, no cálculo para definir o valor das aposentadorias e pensões, o INSS considerava apenas as contribuições feitas após julho de 1994, excluindo todas as anteriores. Por esse motivo, o valor dos benefícios ficava, em muitos casos, mais baixo do que realmente deveria ser.
+            Em dezembro de 2022 o STF aprovou a Revisão da Vida Toda, que tem como objetivo corrigir a injustiça no cálculo nas aposentadorias.
           </p>
           <p>
-            A partir da nova decisão do STF, é possível considerar todas as contribuições realizadas ao longo da vida para recalcular o valor das Aposentadorias e Pensões.
+            Agora é possível considerar todas as contribuições feitas ao longo da vida para recalcular milhares de aposentadorias e pensões.
           </p>
           <p>
-            Isso pode refletir em um aumento de até 5 vezes no valor mensal dos benefícios.
+            Isso pode refletir em um aumento no valor mensal do seu benefício e indenização pelas diferenças dos últimos 5 anos.
           </p>
         </>
       } 
@@ -88,14 +89,14 @@ return (
     {/* imagem deve ser com width: 560px por heigh: 315px */}
     <InsideTopics 
       title={'Quem tem direito?'} 
-      text={<p>A Revisão da Vida Toda se aplica aos Aposentados e Pensionistas que:</p>} 
+      text={<p>Infelizmente não são todas as pessoas que têm esse direito. A Revisão da Vida Toda se aplica apenas aos aposentados e pensionistas que:</p>} 
       listText={[
-        'Contribuíram com valores altos antes de 07/1994 e, após essa data, tiveram contribuições mais baixas;',
-        'Tiveram muitas contribuições antes de 07/1994 e, após essa data, tiveram poucas contribuições.'
+        'Contribuíram ao INSS antes de 1994 e',
+        'Recebem o benefício há menos de 10 anos.'
       ]}
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      grayBoxText={<>A Revisão da Vida Toda se aplica apenas aos aposentados ou pensionistas que estejam recebendo o benefício há <br /><strong>menos de 10 anos.</strong></>}
+      grayBoxText={<>Se você se encaixa nesses requisitos, clique em <strong>quero ser <br/> atendido</strong> e descubra se a revisão da vida toda pode <strong>aumentar o valor</strong> da sua aposentadoria ou pensão.</>}
       image={'/assets/images/aposentadoria/quemTemDireito.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
