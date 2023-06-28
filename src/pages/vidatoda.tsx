@@ -5,7 +5,6 @@ import FormsTopics from '../components/formsTitles';
 import InsideTopics from '../components/insideTopics';
 import ImageGalerySlider from '../components/imageGalerySlider';
 import PeopleComents from '../components/peopleComents';
-import { GetStaticProps } from 'next'
 
 const Aposentadoria: NextPage = () => {
 return (
@@ -48,13 +47,13 @@ return (
       text={
         <>
           <p>
-            Milhares de aposentados que contribuíram ao INSS antes de 1994, podem estar recebendo uma aposentadoria menor do que deveriam.<br/>
+            Milhares de <strong>aposentados </strong>que contribuíram ao INSS <strong>antes de 1994</strong>, podem estar recebendo uma <strong>aposentadoria menor</strong> do que deveriam.<br/>
           </p>
           <p>
-            Isso acontece porque, para calcular o valor das aposentadorias, o INSS considerava apenas as contribuições feitas após julho de 1994 e excluía todas as anteriores.<br /> 
+            Isso acontece porque, para calcular o valor das aposentadorias, o INSS considerava apenas as contribuições feitas após julho de 1994 e <strong>excluía</strong> todas as anteriores.<br /> 
           </p>
           <p>
-            Por esse motivo, o valor dos benefícios de quem se aposentou até novembro de 2019 pode estar mais baixo do que deveria ser.
+            Por esse motivo, o <strong>valor dos benefícios</strong> de quem se aposentou até <strong>novembro de 2019</strong> pode estar <strong>mais baixo</strong> do que deveria ser.
           </p>
         </>} 
       buttonText={'Quero ser atendido'} 
@@ -69,13 +68,13 @@ return (
       text={
         <>  
           <p>
-            Em dezembro de 2022 o STF aprovou a Revisão da Vida Toda, que tem como objetivo corrigir a injustiça no cálculo nas aposentadorias.
+            Em dezembro de 2022 o STF aprovou a Revisão da Vida Toda, que tem como objetivo <strong>corrigir a injustiça</strong> no cálculo nas aposentadorias.
           </p>
           <p>
-            Agora é possível considerar todas as contribuições feitas ao longo da vida para recalcular milhares de aposentadorias e pensões.
+            Agora é possível considerar todas as contribuições feitas ao longo da vida para <strong>recalcular</strong> milhares de <strong>aposentadorias</strong> e <strong>pensões</strong>.
           </p>
           <p>
-            Isso pode refletir em um aumento no valor mensal do seu benefício e indenização pelas diferenças dos últimos 5 anos.
+            Isso pode refletir em um <strong>aumento no valor</strong> mensal do seu benefício e <strong>indenização</strong> pelas diferenças dos últimos 5 anos.
           </p>
         </>
       } 
@@ -89,10 +88,10 @@ return (
     {/* imagem deve ser com width: 560px por heigh: 315px */}
     <InsideTopics 
       title={'Quem tem direito?'} 
-      text={<p>Infelizmente não são todas as pessoas que têm esse direito. A Revisão da Vida Toda se aplica apenas aos aposentados e pensionistas que:</p>} 
+      text={<p>Infelizmente não são todas as pessoas que têm esse direito. A Revisão da Vida Toda se aplica apenas aos <strong>aposentados</strong> e <strong>pensionistas</strong> que:</p>} 
       listText={[
-        'Contribuíram ao INSS antes de 1994 e',
-        'Recebem o benefício há menos de 10 anos.'
+        <>Contribuíram ao INSS <strong>antes de 1994</strong> e;</>,
+        <>Recebem o benefício <strong>há menos de 10 anos.</strong></>
       ]}
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
@@ -160,12 +159,6 @@ return (
       imageDescription={'Aposentados e pensionistas felizes'}
       clientsComentCard={[
         {
-          title: 'Gratidão pela justiça alcançada',
-          text:'Agradeço por transformarem minha vida através da justiça, proporcionando tranquilidade e segurança na defesa dos meus direitos de pensão. O atendimento personalizado e a clareza nas informações foram excepcionais. Sua competência e comprometimento concretizaram meus direitos. Muito obrigada por serem verdadeiros agentes de justiça!',
-          starNumber:5,
-          clientName:'Jussara Miranda'
-        },
-        {
           title: 'Muito bem atendida',
           text:'Muito bem atendida pela excelente advogada, Dra. Bruna Stephano, "expert" em direito previdenciário. Super Recomendo',
           starNumber:5,
@@ -178,25 +171,25 @@ return (
           clientName:'Tadeu Timowicz'
         },
         {
-          title: 'Há mais de 25 anos juntos',
+          title: 'Há mais de 25 anos',
           text:'Atendimento impecável, tratei com os advogados mais experientes da área. Sou cliente do escritório a mais de 25 anos...',
           starNumber:5,
           clientName:'Nilva Carvalho'
         },
         {
           title: 'Rápido e excelente trabalho',
-          text:'Gostaria de agradecer o excelente trabalho realizado pela Dra Bruna Stefano... Oprocesso foi concluído com sucesso em um tempo muito bom...',
+          text:'Gostaria de agradecer o excelente trabalho realizado pela Dra Bruna Stefano. O processo foi concluído com sucesso em um tempo muito bom...',
           starNumber:5,
           clientName:'Daiane Lima'
         },
         {
           title: 'Atendimento excelente',
-          text:'Ótimo atendimento com atendimento excelente. Super indico para quem está procurando um serviço de qualidade.',
+          text:'Ótimo atendimento, excelente. Super indico para quem está procurando um serviço de qualidade.',
           starNumber:5,
           clientName:'Gabriela Fialho'
         },
         {
-          title: 'Proficionais focados e respeiosos',
+          title: 'Profissionais focados e respeitosos',
           text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência',
           starNumber:5,
           clientName:'Matilde Rodrigues'
