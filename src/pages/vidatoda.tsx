@@ -22,7 +22,7 @@ return (
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
     <StaticBanner 
       title="O VALOR DA SUA APOSENTADORIA PODE DOBRAR"
-      subTitle={<>Com a Revisão da Vida Toda você pode aumentar o valor de sua aposentadoria ou pensão e receber uma indenização pelas diferenças dos últimos 5 anos. Clique no botão abaixo para descobrir se você tem direito.</>}
+      subTitle={<>A Revisão da Vida Toda pode aumentar o valor da sua aposentadoria ou pensão e pagar uma indenização pelas diferenças dos últimos 5 anos.</>}
       buttonText="Quero ser atendido"
       buttonLink="/"
       advantages={["Sem compromisso", "100% on-line", "Atendimento especializado"]}
@@ -95,7 +95,7 @@ return (
       ]}
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
-      grayBoxText={<>Se você se encaixa nesses requisitos, clique em <strong>quero ser <br/> atendido</strong> e descubra se a revisão da vida toda pode <strong>aumentar o valor</strong> da sua aposentadoria ou pensão.</>}
+      grayBoxText={<>Se você se encaixa nesses requisitos, <strong>clique no botão abaixo</strong> e descubra se você tem direito à revisão da vida toda.</>}
       image={'/assets/images/aposentadoria/quemTemDireito.jpg'} 
       imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
     />
@@ -160,25 +160,25 @@ return (
       clientsComentCard={[
         {
           title: 'Muito bem atendida',
-          text:'Muito bem atendida pela excelente advogada, Dra. Bruna Stephano, "expert" em direito previdenciário. Super Recomendo',
+          text:'Muito bem atendida pela excelente advogada, Dra. Bruna Stephano, "expert" em direito previdenciário. Super Recomendo!',
           starNumber:5,
           clientName:'Doroti Valeixo'
         },
         {
           title: 'Confiança e profissionalismo',
-          text:'Sou cliente deste conceituado escritório de advocacia há mais de 20 anos, e sempre fui atendido com muito profissionalismo... Recomendo!',
+          text:'Sou cliente deste conceituado escritório de advocacia há mais de 20 anos, e sempre fui atendido com muito profissionalismo. Recomendo!',
           starNumber:5,
           clientName:'Tadeu Timowicz'
         },
         {
           title: 'Há mais de 25 anos',
-          text:'Atendimento impecável, tratei com os advogados mais experientes da área. Sou cliente do escritório a mais de 25 anos...',
+          text:'Atendimento impecável, tratei com os advogados mais experientes da área. Sou cliente do escritório a mais de 25 anos.',
           starNumber:5,
           clientName:'Nilva Carvalho'
         },
         {
           title: 'Rápido e excelente trabalho',
-          text:'Gostaria de agradecer o excelente trabalho realizado pela Dra Bruna Stefano. O processo foi concluído com sucesso em um tempo muito bom...',
+          text:'Gostaria de agradecer o excelente trabalho realizado pela Dra Bruna Stefano. O processo foi concluído com sucesso em um tempo muito bom.',
           starNumber:5,
           clientName:'Daiane Lima'
         },
@@ -190,7 +190,7 @@ return (
         },
         {
           title: 'Profissionais focados e respeitosos',
-          text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência',
+          text:'Ótimos profissionais, super respeitosos, focados em atender o cliente com excelência.',
           starNumber:5,
           clientName:'Matilde Rodrigues'
         },
