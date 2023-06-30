@@ -27,10 +27,6 @@ export default function StaticBanner(props: staticBannerInterface) {
                 <div className={styles.textBox}>
                     <h1>{title}</h1>
                     <p>{subTitle}</p>
-                    <BlueButton 
-                        buttonLink={buttonLink}
-                        buttonText={buttonText}
-                    />
                     <div className={styles.checkedContainer}>
                         {
                             advantages.map((advantage: string) => {

@@ -5,6 +5,7 @@ import FormsTopics from '../components/formsTitles';
 import InsideTopics from '../components/insideTopics';
 import ImageGalerySlider from '../components/imageGalerySlider';
 import PeopleComents from '../components/peopleComents';
+import BlueButton from '../components/atons/blueButton';
 
 const Aposentadoria: NextPage = () => {
 return (
@@ -14,10 +15,25 @@ return (
       <meta name="author" content="Iliam Ferreira Pavkovic"></meta>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+      {/* Image shared in web social links */}
+      <meta property='og:title' content='Glomb - O valor da sua aposentadoria pode dobrar'/>
+      <meta property='og:image' content='/assets/images/aposentadoria/headerPerson.png'/>
+      <meta property='og:description' content='A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos.'/>
+      <meta property='og:url' content='https://www.previdenciario.glomb.com.br/vidatoda'/>
+      <meta property='og:image:width' content='1200'/>
+      <meta property='og:image:height' content='627'/>
+
       <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
       <meta name="keywords" content="aposentadoria, valor, advogado, aposentado"></meta>
       <meta name="description" content="A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos."></meta>
     </Head>
+
+    <BlueButton 
+    isFloating={true} 
+      buttonLink={'/'}
+      buttonText={'Quero ser atendido'}
+    />
 
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
     <StaticBanner 
