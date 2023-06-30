@@ -17,16 +17,20 @@
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 40px;
+    bottom: 50px;
     z-index: 999;
     width: 100%;
+
+    a {
+        border: 1px solid rgba(255,255,255, .5);
+    }
 }
 
 @media (max-width: 1200px) {
     .buttonContainer {
         width: 90%;
         font-size: 16px;
-        padding: 14px;
+        padding: 16px;
     }
 }
 
