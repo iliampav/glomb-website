@@ -113,6 +113,10 @@
         .textBox {
             max-width: 50%;
         }
+
+        p {
+            color: white;
+        }
     }
     .staticbannerSection {
         align-items: flex-end;
@@ -128,15 +132,7 @@
             max-width: 100%;
 
             h1 {
-                font-size: 32px;
                 color: white;
-                line-height: 38px;
-            }
-
-            p {
-                color: white;
-                margin-bottom: 25px;
-                line-height: 22px;
             }
 
             .checkedContainer {
@@ -171,5 +167,22 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+
+    .bannerContainer {
+
+        .textBox {
+
+            h1 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            p {
+                color: white;
+                margin-bottom: 25px;
+                line-height: 22px;
+            }
+        }
     }
 }

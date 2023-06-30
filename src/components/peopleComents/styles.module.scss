@@ -172,13 +172,31 @@
     .PeopleComentsContainer {
 
         >h2 {
-            font-size: 20px;
-            line-height: 29px;
             padding-bottom: 48px;
         }
     
         >div {
-    
+
+            .imageContainer {
+                justify-content: center;
+                display: flex;
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .PeopleComentsContainer {
+
+        >h2 {
+            font-size: 20px;
+            line-height: 29px;
+            padding-bottom: 30px;
+        }
+
+        >div {
+
             .sliderComentsContainer {
     
                 h2 {
@@ -199,24 +217,6 @@
                     font-size: 18px;
                 }
             }
-
-            .imageContainer {
-                justify-content: center;
-                display: flex;
-                margin-bottom: 32px;
-            }
-        }
-    }
-}
-
-@media (max-width: 576px) {
-    .PeopleComentsContainer {
-
-        >h2 {
-            padding-bottom: 30px;
-        }
-
-            >div {
 
             .imageContainer {
                 height: 280px;
