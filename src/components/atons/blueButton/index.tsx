@@ -14,7 +14,7 @@ export default function BlueButton(props: buttonProps) {
     const {buttonLink, buttonText} = props
 
     return (
-        <div className={`container ${isFloating ? styles.floatingButton : ''}`}>
+        <div className={`${isFloating ? styles.floatingButton : ''}`}>
             <Link href={buttonLink} className={`${styles.buttonContainer}`}>
                 {buttonText}
             </Link>
