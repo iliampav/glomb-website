@@ -29,11 +29,13 @@ return (
       <meta name="description" content="A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos."></meta>
     </Head>
 
-    <BlueButton 
-    isFloating={true} 
-      buttonLink={'/'}
-      buttonText={'Quero ser atendido'}
-    />
+    <div className='apearDesktop'>
+      <BlueButton 
+          isFloating={true} 
+          buttonLink={'/'}
+          buttonText={'Quero ser atendido'}
+        />
+    </div>
 
     {/* imagem desktop deve ser com width: 375px por heigh: 720px  e a mobile deve ser width: 596px por heigh: 652px*/}
     <StaticBanner 

@@ -1,5 +1,10 @@
 @import '/src/styles/variables.scss';
 
+.width100 {
+    width: 100%;
+    margin-left: -20px;
+}
+
 .bannerContainer {
     width: 100%;
     display: flex;

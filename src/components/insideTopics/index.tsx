@@ -47,6 +47,7 @@ export default function InsideTopics(props: insideTopicsInterface) {
                             <p>{grayBoxText}</p>
                         </div>
                     }
+                    <BlueButton buttonLink={buttonLink} buttonText={buttonText} />
                 </div>
             </div>
         </section>
