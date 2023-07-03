@@ -46,7 +46,7 @@ return (
       advantages={["Sem compromisso", "100% on-line", "Atendimento especializado"]}
       headerDesktop='/assets/images/aposentadoria/headerPerson.png'
       headerDesktopDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
-      headerMobile='/assets/images/aposentadoria/headerPersonMobile.png'
+      headerMobile='/assets/images/aposentadoria/headerPersonMobile.jpg'
       headerMobileDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
     />
 
