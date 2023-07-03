@@ -19,14 +19,14 @@ return (
       {/* Image shared in web social links */}
       <meta property='og:title' content='O valor da sua aposentadoria pode dobrar'/>
       <meta property='og:image' content='/assets/images/aposentadoria/cover.jpg'/>
-      <meta property='og:description' content='A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos.'/>
+      <meta property='og:description' content='Descubra como aumentar o valor da sua aposentadoria e receber uma indenização.'/>
       <meta property='og:url' content='https://www.previdenciario.glomb.com.br/vidatoda'/>
       <meta property='og:image:width' content='1200'/>
       <meta property='og:image:height' content='627'/>
 
       <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
-      <meta name="keywords" content="aposentadoria, valor, advogado, aposentado"></meta>
-      <meta name="description" content="A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos."></meta>
+      <meta name="keywords" content="aumentar valor aposentadoria, advogado, aposentado, revisão da vida toda"></meta>
+      <meta name="description" content="Descubra como aumentar o valor da sua aposentadoria e receber uma indenização."></meta>
     </Head>
 
     <div className='apearDesktop'>
