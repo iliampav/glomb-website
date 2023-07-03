@@ -18,7 +18,7 @@ return (
 
       {/* Image shared in web social links */}
       <meta property='og:title' content='Glomb - O valor da sua aposentadoria pode dobrar'/>
-      <meta property='og:image' content='/assets/images/aposentadoria/headerPerson.png'/>
+      <meta property='og:image' content='/assets/images/aposentadoria/cover.jpg'/>
       <meta property='og:description' content='A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos.'/>
       <meta property='og:url' content='https://www.previdenciario.glomb.com.br/vidatoda'/>
       <meta property='og:image:width' content='1200'/>
