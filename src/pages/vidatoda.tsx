@@ -12,12 +12,12 @@ return (
   <>
     <Head>
       <meta charSet="UTF-8" />
-      <meta name="author" content="Iliam Ferreira Pavkovic"></meta>
+      <meta name="author" content="Hermes TI"></meta>
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
       {/* Image shared in web social links */}
-      <meta property='og:title' content='Glomb - O valor da sua aposentadoria pode dobrar'/>
+      <meta property='og:title' content='O valor da sua aposentadoria pode dobrar'/>
       <meta property='og:image' content='/assets/images/aposentadoria/cover.jpg'/>
       <meta property='og:description' content='A Revisão da Vida Toda permite aumentar o valor de milhares de aposentadorias e pensões e, ainda cobrar uma indenização pelas diferenças dos últimos 5 anos.'/>
       <meta property='og:url' content='https://www.previdenciario.glomb.com.br/vidatoda'/>
@@ -45,9 +45,9 @@ return (
       buttonLink="/"
       advantages={["Sem compromisso", "100% on-line", "Atendimento especializado"]}
       headerDesktop='/assets/images/aposentadoria/headerPerson.png'
-      headerDesktopDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
+      headerDesktopDescription="Aposentada recebeu aposentadoria maior"
       headerMobile='/assets/images/aposentadoria/headerPersonMobile.jpg'
-      headerMobileDescription="Mais de 20000 clientes com mais de 500 avaliações e nota 4.8 estrelas"
+      headerMobileDescription="Aposentada recebeu aposentadoria maior"
     />
 
     <FormsTopics 
@@ -71,13 +71,13 @@ return (
             Isso acontece porque, para calcular o valor das aposentadorias, o INSS considerava apenas as contribuições feitas após julho de 1994 e <strong>excluía</strong> todas as anteriores.<br /> 
           </p>
           <p>
-            Por esse motivo, o <strong>valor dos benefícios</strong> de quem se aposentou até <strong>novembro de 2019</strong> pode estar <strong>mais baixo</strong> do que deveria ser.
+            Por esse motivo, o <strong>valor</strong> de <strong>muitos benefícios</strong> pode estar <strong>mais baixo</strong> do que deveria ser.
           </p>
         </>} 
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
       image={'/assets/images/aposentadoria/imageAposentadoMelhor.jpg'} 
-      imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
+      imageDescription={'Aposentados sorrindo após aumentarem suas aposentadorias'} 
     />
 
     {/* imagem deve ser com width: 560px por heigh: 315px */}
@@ -99,7 +99,7 @@ return (
       buttonText={'Quero ser atendido'} 
       buttonLink={'/'} 
       image={'/assets/images/aposentadoria/vantagemMelhorRevisao.jpg'} 
-      imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
+      imageDescription={'Aposentado recebeu um valor maior de aposentadoria'} 
       invertImagePosition={true}
     />
 
@@ -115,7 +115,7 @@ return (
       buttonLink={'/'} 
       grayBoxText={<>Se você se encaixa nesses requisitos, <strong>clique no botão abaixo</strong> e descubra se você tem direito à revisão da vida toda.</>}
       image={'/assets/images/aposentadoria/quemTemDireito.jpg'} 
-      imageDescription={'Aposentada sorrindo pensando na revisão da apolice'} 
+      imageDescription={'APensionista recebeu um valor maior de benefício'} 
     />
     
     <ImageGalerySlider 
@@ -125,47 +125,47 @@ return (
       carrouselImages={[
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice.jpg',
-          imageDescription: ''
+          imageDescription: 'Corredor do escritório Glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice2.jpg',
-          imageDescription: ''
+          imageDescription: 'Sala de atendimento aos clientes glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice3.jpg',
-          imageDescription: ''
+          imageDescription: 'Sala de atendimento aos clientes 2 glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice4.jpg',
-          imageDescription: ''
+          imageDescription: 'Salas dos advogados especialistas'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice5.jpg',
-          imageDescription: ''
+          imageDescription: 'Salas dos advogados especialistas'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice6.jpg',
-          imageDescription: ''
+          imageDescription: 'Recepção escritório glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice7.jpg',
-          imageDescription: ''
+          imageDescription: 'Recepção escritório glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice8.jpg',
-          imageDescription: ''
+          imageDescription: 'Recepção escritório glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice9.jpg',
-          imageDescription: ''
+          imageDescription: 'Recepção escritório glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice10.jpg',
-          imageDescription: ''
+          imageDescription: 'Sala de reuniões glomb advogados'
         },
         {
           imageUrl: '/assets/images/aposentadoria/escritorio/glomOffice11.jpg',
-          imageDescription: ''
+          imageDescription: 'Sala de reuniões glomb advogados'
         }
       ]}
     />
@@ -174,7 +174,7 @@ return (
       sectionTitle={<>Atendemos <strong>100% on-line</strong> em todo o Brasil</>}
       clientCardsTitle='O que nossos clientes dizem'
       imageUrl={'/assets/images/aposentadoria/grupoPessoas.png'} 
-      imageDescription={'Aposentados e pensionistas felizes'}
+      imageDescription={'Aposentados e pensionistas aumentaram o valor de suas aposentadorias e pensões'}
       clientsComentCard={[
         {
           title: 'Muito bem atendida',
