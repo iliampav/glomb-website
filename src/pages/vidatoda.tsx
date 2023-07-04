@@ -219,17 +219,3 @@ return (
 }
 
 export default Aposentadoria
-
-export async function getServerSideProps({ req, res }: any) {
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  );
-
-  return {
-    props: {
-      time: new Date().toISOString(),
-    },
-  };
-}
-
