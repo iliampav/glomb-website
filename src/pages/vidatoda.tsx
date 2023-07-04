@@ -18,7 +18,7 @@ return (
 
       {/* Image shared in web social links */}
       <meta property='og:title' content='O valor da sua aposentadoria pode dobrar'/>
-      <meta property='og:image' content='https://glomb-website.vercel.app/assets/images/aposentadoria/cover.jpg'/>
+      <meta property='og:image' content={'/assets/images/aposentadoria/cover.jpg'}/>
       <meta property="og:image:type" content="image/jpg" />
       <meta property='og:description' content='Descubra como aumentar o valor da sua aposentadoria e receber uma indenização.'/>
       <meta property='og:url' content='https://www.glomb-website.vercel.app/vidatoda/'/>
