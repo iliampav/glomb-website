@@ -48,12 +48,14 @@ export default function StaticBanner(props: staticBannerInterface) {
                         className={'apearMobile'}
                         src={headerDesktop}
                         alt={headerDesktopDescription}
+                        loading="lazy"
                     />
 
                     <img
                         className={'apearDesktop'}
                         src={headerMobile}
                         alt={headerMobileDescription}
+                        loading="lazy"
                     />
 
                 </div>

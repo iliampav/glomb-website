@@ -24,6 +24,7 @@ export default function InsideTopics(props: insideTopicsInterface) {
             <div className={`container ${styles.insideTopicsMainBox} ${invertImagePosition ? styles.invertImagePosition : '' }`}>
                 <div className={styles.imageContainer}>
                     <img 
+                        loading="lazy"
                         src={image} 
                         alt={imageDescription} 
                     />
