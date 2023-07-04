@@ -18,9 +18,10 @@ return (
 
       {/* Image shared in web social links */}
       <meta property='og:title' content='O valor da sua aposentadoria pode dobrar'/>
-      <meta property='og:image' content={'/assets/images/aposentadoria/cover.jpg'}/>
+      <meta property='og:image' itemProp='image' content={'/assets/images/aposentadoria/cover.jpg'}/>
       <meta property='og:description' content='Descubra como aumentar o valor da sua aposentadoria e receber uma indenização.'/>
       <meta property='og:url' content='https://glomb-website.vercel.app/vidatoda/'/>
+      <meta property='og:type' content='website'/>
 
       <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
       <meta name="keywords" content="aposentadoria, aposentado, pensionista, revisão, vida toda, INSS, Advogado"></meta>
