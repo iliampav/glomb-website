@@ -2,6 +2,9 @@
 const nextConfig = {
     reactStrictMode: true,
     trailingSlash: true,
+    images: {
+      unoptimized: true
+    },
     output: 'export',
     webpack(config) {
       config.module.rules.push({
