@@ -21,7 +21,7 @@ return (
       <meta property='og:image' content='https://glomb-website.vercel.app/assets/images/aposentadoria/cover.jpg'/>
       <meta property="og:image:type" content="image/jpg" />
       <meta property='og:description' content='Descubra como aumentar o valor da sua aposentadoria e receber uma indenização.'/>
-      <meta property='og:url' content='https://www.previdenciario.glomb.com.br/vidatoda'/>
+      <meta property='og:url' content='https://www.glomb-website.vercel.app/vidatoda/'/>
       <meta property='og:image:width' content='1200'/>
       <meta property='og:image:height' content='627'/>
 
