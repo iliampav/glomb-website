@@ -2,9 +2,7 @@ import styles from './styles.module.scss';
 import React from 'react';
 import { useSwiper } from 'swiper/react';
 import SliderNext from '@/public/assets/svgs/sliderNext.svg';
-import SliderNextMobile from '@/public/assets/svgs/sliderNextMobile.svg';
 import SliderPrev from '@/public/assets/svgs/sliderPrev.svg';
-import SliderPrevMobile from '@/public/assets/svgs/sliderPrevMobile.svg';
 
 
 export default function SwiperButtons() {
@@ -12,7 +10,7 @@ export default function SwiperButtons() {
     const swiper = useSwiper();
     
     return (
-            <div className={`${styles.sliderButtons}`}>
+            <div className={`${styles.sliderButtons} apearMobile`}>
                 <button aria-label="see previoues image" onClick={() => swiper.slidePrev()}>
                     <SliderPrev />
                 </button>

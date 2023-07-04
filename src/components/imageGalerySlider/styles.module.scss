@@ -155,6 +155,25 @@
             width: 100% !important;
         }
 
+        :global(.swiper-button-prev) {
+            color: white;
+        }
+
+        :global(.swiper-button-next) {
+            color: white;
+        }
+
+        :global(.swiper-pagination-bullet) {
+            width: 5px;
+            height: 5px;
+        }
+
+        :global(.swiper-pagination-bullet-active) {
+            width: 8px;
+            height: 8px;
+            background-color: white;
+        }
+
         .nextOrPrevSlider {
             height: 280px !important;
 

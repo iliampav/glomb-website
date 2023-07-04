@@ -108,7 +108,7 @@ section {
 @media (max-width: 768px) {
 
   .apearMobile {
-      display: none;
+      display: none !important;
   }
 
   .apearDesktop {
