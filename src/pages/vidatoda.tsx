@@ -26,7 +26,7 @@ return (
       <meta property='og:image:height' content='627'/>
 
       <title>Glomb - O valor da sua aposentadoria pode dobrar</title>
-      <meta name="keywords" content="aumentar valor aposentadoria, advogado, aposentado, revisão da vida toda"></meta>
+      <meta name="keywords" content="aposentadoria, aposentado, pensionista, revisão, vida toda, INSS, Advogado"></meta>
       <meta name="description" content="Descubra como aumentar o valor da sua aposentadoria e receber uma indenização."></meta>
     </Head>
 
