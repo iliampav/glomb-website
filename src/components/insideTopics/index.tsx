@@ -10,7 +10,7 @@ interface insideTopicsInterface {
     buttonLink: string, 
     image: string, 
     imageDescription: string,
-    listText?: string[], 
+    listText?: string[] | ReactNode[], 
     grayBoxText?: ReactNode | string, 
     invertImagePosition?: boolean
 }
@@ -24,6 +24,7 @@ export default function InsideTopics(props: insideTopicsInterface) {
             <div className={`container ${styles.insideTopicsMainBox} ${invertImagePosition ? styles.invertImagePosition : '' }`}>
                 <div className={styles.imageContainer}>
                     <img 
+                        loading="lazy"
                         src={image} 
                         alt={imageDescription} 
                     />
@@ -35,8 +36,8 @@ export default function InsideTopics(props: insideTopicsInterface) {
                         listText &&
                             <ul>
                                 {
-                                    listText.map((text: string) => {
-                                        return <li key={text}><p>{text}</p></li>
+                                    listText.map((text: string | ReactNode) => {
+                                        return <li key={Math.random()}><p>{text}</p></li>
                                     })
                                 }
                             </ul>

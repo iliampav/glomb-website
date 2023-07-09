@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app'
 import '../styles/globals.scss'
 import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // export function reportWebVitals(metric: NextWebVitalsMetric) {
 //   if (metric.label === 'web-vital') {

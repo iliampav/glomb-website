@@ -84,17 +84,22 @@
 
 @media (max-width: 992px) {
     .formsTopics {
-        flex-wrap: wrap;
-        gap: 30px;
+        width: 100vw;
+        max-width: unset;
+        gap: 10px;
 
         >div {
-            width: 45%;
+            width: 33%;
             justify-content: center !important;
 
             &:after {
                 content: unset !important;
             }
         }
+    }
+
+    .singleFormBox {
+        gap: 10px !important;
     }
 }
 
@@ -118,7 +123,7 @@
         padding: 40px 0;
         position: relative;
         overflow: visible;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
 
         &::after {
             content: "";

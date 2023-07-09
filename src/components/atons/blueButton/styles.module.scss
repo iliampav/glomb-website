@@ -2,19 +2,36 @@
 
 .buttonContainer {
     width: 95%;
-    padding: 16px;
+    padding: 14px;
     background-color: $branding-primary;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     font: $main-text-20;
+    font-weight: 700;
+}
+
+.floatingButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 40px;
+    z-index: 999;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    a {
+        border: 1px solid rgba(255,255,255, .5);
+    }
 }
 
 @media (max-width: 1200px) {
     .buttonContainer {
         width: 90%;
-        font-size: 16px;
+        font-size: 18px;
         padding: 14px;
     }
 }
@@ -22,7 +39,6 @@
 @media (max-width: 768px) {
     .buttonContainer {
         width: 100%;
-        font-size: 18px;
     }
 }
 

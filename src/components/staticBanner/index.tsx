@@ -27,10 +27,13 @@ export default function StaticBanner(props: staticBannerInterface) {
                 <div className={styles.textBox}>
                     <h1>{title}</h1>
                     <p>{subTitle}</p>
-                    <BlueButton 
-                        buttonLink={buttonLink}
-                        buttonText={buttonText}
-                    />
+                    <div className={`apearMobile ${styles.width100}`}>
+                        <BlueButton 
+
+                            buttonLink={buttonLink}
+                            buttonText={buttonText}
+                        />
+                    </div>
                     <div className={styles.checkedContainer}>
                         {
                             advantages.map((advantage: string) => {
@@ -45,12 +48,14 @@ export default function StaticBanner(props: staticBannerInterface) {
                         className={'apearMobile'}
                         src={headerDesktop}
                         alt={headerDesktopDescription}
+                        loading="lazy"
                     />
 
                     <img
                         className={'apearDesktop'}
                         src={headerMobile}
                         alt={headerMobileDescription}
+                        loading="lazy"
                     />
 
                 </div>

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { ReactNode } from 'react';
 import SwiperButtons from './swiperButtons';
+import { Keyboard, Mousewheel, Navigation, Pagination } from 'swiper';
 
 interface imageGalerySliderInterface {
     title: ReactNode | string;
@@ -62,30 +63,40 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                         })
                     }
                 </div>
-                <Swiper
-                    slidesPerView={screenSize.dynamicWidth >= 768 ? 5 : 1} 
-                    className="mySwiper"
-                    centeredSlides={true}
-                    loop={screenSize.dynamicWidth <= 768}
-                    spaceBetween={screenSize.dynamicWidth >= 768 ? 30 : 0}
-                    initialSlide={initialSlideNumber}
-                >
-                    <SwiperButtons />
-                    
-                    {
-                        carrouselImages.map((image: imageInterface) => {
-                            return (
-                            <SwiperSlide key={image.imageUrl} className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
-                                <img 
-                                    src={image.imageUrl}
-                                    alt={image.imageDescription}
-                                />
-                            </SwiperSlide>
-                            )
-                        })
-                    }
-                    
-                </Swiper>
+                <div className={styles.swiperContainerMobile}>
+
+                    <Swiper
+                        slidesPerView={screenSize.dynamicWidth >= 768 ? 5 : 1} 
+                        className="mySwiper"
+                        centeredSlides={true}
+                        loop={screenSize.dynamicWidth <= 768}
+                        spaceBetween={screenSize.dynamicWidth >= 768 ? 30 : 10}
+                        initialSlide={initialSlideNumber}
+                        cssMode={screenSize.dynamicWidth >= 769}
+                        navigation={screenSize.dynamicWidth <= 768}
+                        pagination={screenSize.dynamicWidth <= 768}
+                        mousewheel={screenSize.dynamicWidth <= 768}
+                        keyboard={screenSize.dynamicWidth <= 768}
+                        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+                    >
+                        <SwiperButtons />
+                        
+                        {
+                            carrouselImages.map((image: imageInterface) => {
+                                return (
+                                <SwiperSlide key={image.imageUrl} className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
+                                    <img 
+                                         loading="lazy"
+                                        src={image.imageUrl}
+                                        alt={image.imageDescription}
+                                    />
+                                </SwiperSlide>
+                                )
+                            })
+                        }
+                        
+                    </Swiper>
+                </div>
             </div>
         </section>
     )

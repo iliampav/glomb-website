@@ -1,5 +1,10 @@
 @import '/src/styles/variables.scss';
 
+.width100 {
+    width: 100%;
+    margin-left: -20px;
+}
+
 .bannerContainer {
     width: 100%;
     display: flex;
@@ -52,7 +57,8 @@
         position: relative;
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
             object-fit: contain;
         }
     }
@@ -75,7 +81,7 @@
 
             .checkedContainer {
                 gap: 0 16px;
-                margin-top: 19px;
+                margin-top: 0px;
             }
         }
 
@@ -101,11 +107,23 @@
 }
 
 @media (max-width: 768px) {
+
+    .bannerContainer {
+        padding: 55px 24px 24px;
+
+        .textBox {
+            max-width: 50%;
+        }
+
+        p {
+            color: white;
+        }
+    }
     .staticbannerSection {
         align-items: flex-end;
         padding: 0px;
         padding-bottom: 32px;
-        height: 100vh;
+        height: 107vh;
     }
     
     .bannerContainer {
@@ -115,21 +133,14 @@
             max-width: 100%;
 
             h1 {
-                font-size: 32px;
                 color: white;
-                line-height: 38px;
-            }
-
-            p {
-                color: white;
-                margin-bottom: 25px;
-                line-height: 22px;
             }
 
             .checkedContainer {
     
                 p {
                     color: white;
+                    padding: 7px 5px 7px 0;
                 }
             }
         }
@@ -146,7 +157,7 @@
                 max-width: unset;
                 object-fit: cover;
                 width: 100vw;
-                height: 100vh;
+                height: 107vh;
                 object-position: 50% 0;
             }
                 
@@ -157,5 +168,22 @@
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
+    }
+
+    .bannerContainer {
+
+        .textBox {
+
+            h1 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            p {
+                color: white;
+                margin-bottom: 25px;
+                line-height: 22px;
+            }
+        }
     }
 }
