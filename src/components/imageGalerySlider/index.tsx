@@ -85,7 +85,6 @@ export default function ImageGalerySlider(props: imageGalerySliderInterface) {
                             carrouselImages.map((image: imageInterface) => {
                                 return (
                                 <SwiperSlide key={image.imageUrl} className={`${styles.changeActiveSlider} ${styles.nextOrPrevSlider}`}>
-                                    <img className={styles.imgEffect}  loading="lazy" src="/assets/images/aposentadoria/galeryBG.png" alt="Galery effect" />
                                     <img 
                                          loading="lazy"
                                         src={image.imageUrl}
